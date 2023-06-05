@@ -100,9 +100,9 @@ app.delete("/user/delete/:userId/", async (request, response) => {
 const getFollowingPeopleIdsOfUser = async (username) => {
   const getTheFollowingPeopleQuery = `
   SELECT
-following_user_id FROM follower
-INNER JOIN user ON user.user_id = follower.follower_user_id
-WHERE user.username='${username}';`;
+  following_user_id FROM follower
+  INNER JOIN user ON user.user_id = follower.follower_user_id
+  WHERE user.username='${username}';`;
 
   const followingPeople = await db.all(getTheFollowingPeopleQuery);
   const arrayOfIds = followingPeople.map(

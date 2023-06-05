@@ -1,8 +1,8 @@
 # Twitter
 
-Given an `app.js` file and a database file `twitterClone.db` consisting of five tables `user`, `follower`, `tweet`, `reply`, and `like`.
+An `app.js` file and a database file `twitterClone.db` consisting of five tables `user`, `follower`, `tweet`, `reply`, and `like` are created.
 
-Write APIs to perform operations on the tables `user`, `follower`, `tweet`, `reply`, and `like` containing the following columns,
+APIs are created to perform operations on the tables `user`, `follower`, `tweet`, `reply`, and `like` containing the following columns,
 
 **User Table**
 
@@ -62,6 +62,10 @@ Here, if user1 follows user2 then,
   "password":"biden@123"
 }
 ```
+
+Check for all the CRUD operations are done first. Each HTTP methods directly manipulates the tables in Database.
+
+Below are the following APIs to be obtained for different scenarios.
 
 <Section id="section1" >
 
