@@ -8,6 +8,10 @@ const jwt = require("jsonwebtoken");
 const app = express();
 app.use(express.json());
 
+/* PATH is a path to the file which we want to send.
+_dirname is a variable in Common JS Modules that returns the 
+path of the folder where the current file is present. */
+
 const dbPath = path.join(__dirname, "twitterClone.db");
 let db = null;
 
