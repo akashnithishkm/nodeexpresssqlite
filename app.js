@@ -28,13 +28,14 @@ const initializeDbAndServer = async () => {
     process.exit(1);
   }
 };
+
 initializeDbAndServer();
 
 //Check for CRUD operations
 
 //GET METHOD
 app.get("/", async (request, response) => {
-  const query = `SELECT * FROM user;`;
+  const query = `SELECT * FROM tweet;`;
   const getQuery = await db.all(query);
   response.send(getQuery);
 });
@@ -105,9 +106,11 @@ const getFollowingPeopleIdsOfUser = async (username) => {
   WHERE user.username='${username}';`;
 
   const followingPeople = await db.all(getTheFollowingPeopleQuery);
+  console.log(followingPeople);
   const arrayOfIds = followingPeople.map(
     (eachUser) => eachUser.following_user_id
   );
+  console.log(arrayOfIds);
   return arrayOfIds;
 };
 
