@@ -1,0 +1,26 @@
+POST http://localhost:3001/register/
+Content-Type: application/json
+
+{
+ "username" : "shashank_ccbp",
+ "password" : "shashank123",
+ "name" : "Shashank",
+ "gender" : "male"
+}
+
+###
+POST http://localhost:3001/login/
+Content-Type: application/json
+
+{
+ "username" : "shashank_ccbp",
+ "password" : "shashank123",
+ "name" : "Shashank",
+ "gender" : "male"
+}
+
+//jwtwebtoken for stephen 
+//{ "jwtToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoYXNoYW5rX2NjYnAiLCJ1c2VySWQiOjE4LCJpYXQiOjE2OTA1MzI4MzN9.m2k4z8_2uc6-PsV8QMyD7EHJEVs5uHnYvy_dOBL_zCA" }
+### 
+GET http://localhost:3001/user/details
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InNoYXNoYW5rX2NjYnAiLCJ1c2VySWQiOjE4LCJpYXQiOjE2OTA1MzI4MzN9.m2k4z8_2uc6-PsV8QMyD7EHJEVs5uHnYvy_dOBL_zCA

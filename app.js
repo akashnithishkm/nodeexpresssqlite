@@ -24,8 +24,8 @@ const initializeDbAndServer = async () => {
       driver: sqlite3.Database,
     });
 
-    app.listen(3000, () => {
-      console.log("Server Running at http://localhost:3000/");
+    app.listen(3001, () => {
+      console.log("Server Running at http://localhost:3001/");
     });
   } catch (error) {
     console.log(`DB Error : ${error.message}`);
@@ -39,7 +39,7 @@ initializeDbAndServer();
 
 //GET METHOD
 app.get("/", async (request, response) => {
-  const query = `SELECT * FROM tweet;`;
+  const query = `SELECT * FROM user;`;
   const getQuery = await db.all(query);
   response.send(getQuery);
 });

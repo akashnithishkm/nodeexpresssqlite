@@ -1,0 +1,33 @@
+GET http://localhost:3001/
+
+###
+
+GET http://localhost:3001/twitter/user/15/
+
+###
+
+POST http://localhost:3001/user/register/
+Content-Type: application/json
+
+{
+    "username" : "rahul_2021",
+    "password" : "rahul123",
+    "name" : "Rahul",
+    "gender" : "male"
+}
+
+###
+
+PUT http://localhost:3001/user/update/15/
+Content-Type: application/json
+
+{
+    "username" : "rahul_2021",
+    "password" : "rahul123",
+    "name" : "Rahul Attuluri",
+    "gender" : "male"
+}
+
+###
+
+DELETE http://localhost:3001/user/delete/15/

@@ -1,41 +1,41 @@
-GET http://localhost:3000/
+GET http://localhost:3001/
 
 ###
 
-GET http://localhost:3000/twitter/user/7/
+GET http://localhost:3001/twitter/user/15/
 
 ###
 
-POST http://localhost:3000/user/register/
+POST http://localhost:3001/user/register/
 Content-Type: application/json
 
 {
-    "username" : "akashnithish_km",
-    "password" : "akash123",
-    "name" : "Akash Nithish",
+    "username" : "rahul_2021",
+    "password" : "rahul123",
+    "name" : "Rahul",
     "gender" : "male"
 }
 
 ###
 
-PUT http://localhost:3000/user/update/12/
+PUT http://localhost:3001/user/update/15/
 Content-Type: application/json
 
 {
-  "username": "adam_richard",
-  "password": "richard_567",
-  "name": "Adam Richard",
-  "gender": "male"
+    "username" : "rahul_2021",
+    "password" : "rahul123",
+    "name" : "Rahul Attuluri",
+    "gender" : "male"
 }
 
 ###
 
-DELETE http://localhost:3000/user/delete/12/
+DELETE http://localhost:3001/user/delete/17/
 
 
 //API - 1
 #### 
-POST http://localhost:3000/register/
+POST http://localhost:3001/register/
 Content-Type: application/json
 
 {
@@ -47,7 +47,7 @@ Content-Type: application/json
 
 //API - 2
 ###
-POST http://localhost:3000/login/
+POST http://localhost:3001/login/
 Content-Type: application/json
 
 {
@@ -62,42 +62,42 @@ Content-Type: application/json
 
 //API - 3
 ### 
-GET http://localhost:3000/user/tweets/feed/
+GET http://localhost:3001/user/tweets/feed/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 4
 ###
-GET http://localhost:3000/user/following/
+GET http://localhost:3001/user/following/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 5
 ###
-GET http://localhost:3000/user/followers/
+GET http://localhost:3001/user/followers/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 6
 ###
-GET http://localhost:3000/tweets/1/
+GET http://localhost:3001/tweets/1/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 7
 ###
-GET http://localhost:3000/tweets/4/likes/
+GET http://localhost:3001/tweets/4/likes/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 8
 ###
-GET http://localhost:3000/tweets/7/replies/
+GET http://localhost:3001/tweets/7/replies/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 9
 ###
-GET http://localhost:3000/user/tweets/
+GET http://localhost:3001/user/tweets/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
 //API - 10
 ###
-POST http://localhost:3000/user/tweets/
+POST http://localhost:3001/user/tweets/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 Content-Type: application/json
 
@@ -107,6 +107,6 @@ Content-Type: application/json
 
 //API - 11
 ###
-DELETE http://localhost:3000/tweets/13/
+DELETE http://localhost:3001/tweets/13/
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InN0ZXBoZW5fc3QiLCJ1c2VySWQiOjE0LCJpYXQiOjE2ODYwMjk5Nzd9.G5mecChzcWHEp94j2lBsbwO_4RXjF5JTSGh9NmXKEN8
 
