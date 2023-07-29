@@ -2,7 +2,7 @@ GET http://localhost:3001/
 
 ###
 
-GET http://localhost:3001/twitter/user/15/
+GET http://localhost:3001/twitter/user/16/
 
 ###
 
@@ -10,9 +10,9 @@ POST http://localhost:3001/user/register/
 Content-Type: application/json
 
 {
-    "username" : "rahul_2021",
-    "password" : "rahul123",
-    "name" : "Rahul",
+    "username" : "gokul_2021",
+    "password" : "gokul123",
+    "name" : "GokulKrishna",
     "gender" : "male"
 }
 
