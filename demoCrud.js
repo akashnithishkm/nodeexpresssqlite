@@ -6,6 +6,9 @@ const bcrypt = require("bcrypt");
 
 const app = express();
 
+// Middleware to parse JSON bodies
+app.use(express.json());
+
 /* PATH is a path to the file which we want to send.
 _dirname is a variable in Common JS Modules that returns the 
 path of the folder where the current file is present. */
