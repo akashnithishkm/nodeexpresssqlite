@@ -2,9 +2,9 @@ POST http://localhost:3001/register/
 Content-Type: application/json
 
 {
- "username" : "shashank_ccbp",
- "password" : "shashank123",
- "name" : "Shashank",
+ "username" : "akash_ccbp",
+ "password" : "akashnithish123",
+ "name" : "AkashNithish",
  "gender" : "male"
 }
 
